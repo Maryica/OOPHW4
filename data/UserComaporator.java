@@ -2,6 +2,12 @@ package data;
 
 import java.util.Comparator;
 
+/**
+ * Принцип единственной ответственности (Single Responsibility Principle)
+ * реализуется в классе UserComaporator (выполнение одной функции для сравнения
+ * 2х объектов)
+ * 
+ */
 public class UserComaporator<T extends User> implements Comparator<T> {
     @Override
     public int compare(T o1, T o2) {
